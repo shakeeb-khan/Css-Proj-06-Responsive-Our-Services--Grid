@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Mako Regular;
+  src: url(/assets/Mako-Regular.woff2);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mako Regular;
+}
+body{
+  background: rgb(211, 239, 249);
+  width: 100%;
+}
+.container{
+  padding: 80px 50px;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.service-card{
+  margin-top: 60px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.service-card div{
+  background: rgb(27, 39, 43);
+  color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.5s;
+}
+.service-card div:hover{
+  background: rgb(57, 81, 88);
+  transform: translateY(-10px);
+}
+
+.service-card div i{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.service-card div h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.service-card div p{
+  margin-bottom: 20px;
+}
+.service-card div a{
+ text-decoration: none;
+ color: #fff;
+ font-weight: 600;
+}
